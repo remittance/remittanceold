@@ -1,0 +1,449 @@
+<html lang="en" data-kantu="1">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <main class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">#SystemName#</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="Orders.html"
+                  aria-current="page"
+                  >Orders</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Clients.html">Clients</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <form>
+          <h2>New Order</h2>
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <a
+                    style="cursor: pointer; font-weight: bold"
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Money Information
+                  </a>
+                </h5>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label for="title">Amount Sent (USD)</label
+                        ><input class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label for="genreId">Type of service</label
+                        ><select class="form-control"
+                          ><option value="5b21ca3eeb7f6fbccd471818"
+                            >Bank Deposit</option
+                          ><option value="5b21ca3eeb7f6fbccd471814"
+                            >Cash Pickup</option
+                          >
+                          ></select
+                        >
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label for="numberInStock">Currency Destination</label>
+                        <select class="form-control">
+                          <option value="5b21ca3eeb7f6fbccd471818">BRL</option>
+                          <option value="5b21ca3eeb7f6fbccd471814">USD</option>
+                          <option value="5b21ca3eeb7f6fbccd471814">MXN</option>
+                          <option value="5b21ca3eeb7f6fbccd471814">PHP</option>
+                          <option value="5b21ca3eeb7f6fbccd471814">ARP</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label for="numberInStock">Remittance Company</label>
+                        <select class="form-control">
+                          <option value="5b21ca3eeb7f6fbccd471818"
+                            >Pontual</option
+                          >
+                          <option value="5b21ca3eeb7f6fbccd471814">Uno</option>
+                          <option value="5b21ca3eeb7f6fbccd471814"
+                            >Golden</option
+                          >
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <a
+                    style="cursor: pointer; font-weight: bold"
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Sender Information
+                  </a>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label for="title">Full Name</label
+                        ><input class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label for="genreId">Type </label
+                        ><select class="form-control"
+                          ><option value="5b21ca3eeb7f6fbccd471818"
+                            >Person</option
+                          ><option value="5b21ca3eeb7f6fbccd471814"
+                            >Company</option
+                          >
+                          ></select
+                        >
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label for="numberInStock">Phone Number</label>
+                        <input class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="form-group">
+                        <label for="numberInStock">Birthday (mm/dd/yyyy)</label>
+                        <input class="form-control" />
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-3">
+                          <div class="form-group">
+                            <label for="genreId">Country </label
+                            ><select class="form-control"
+                              ><option value="5b21ca3eeb7f6fbccd471818"
+                                >USA</option
+                              ><option value="5b21ca3eeb7f6fbccd471814"
+                                >Canada</option
+                              >
+                              ></select
+                            >
+                          </div>
+                        </div>
+                      <div class="col-3">
+                        <div class="form-group">
+                          <label for="title">Street Address</label
+                          ><input class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-2">
+                          <div class="form-group">
+                            <label for="numberInStock">Zip</label>
+                            <input class="form-control" />
+                            </select>
+                          </div>
+                       </div>
+                       <div class="col-2">
+                          <div class="form-group">
+                            <label for="numberInStock">City</label>
+                            <input class="form-control" />
+                            </select>
+                          </div>
+                       </div>
+                       <div class="col-2">
+                          <div class="form-group">
+                            <label for="numberInStock">State</label>
+                            <input class="form-control" />
+                            </select>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                          <div class="form-group">
+                            <label for="title">Document Number</label
+                            ><input class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="form-group">
+                            <label for="genreId">Type </label
+                            ><select class="form-control"
+                              ><option value="5b21ca3eeb7f6fbccd471818"
+                                >Passport</option
+                              ><option value="5b21ca3eeb7f6fbccd471814"
+                                >Driver License</option
+                              >
+                              <option value="5b21ca3eeb7f6fbccd471814"
+                                >State License</option
+                              >
+                              <option value="5b21ca3eeb7f6fbccd471814"
+                                >Social Security Number</option
+                              >
+                              ></select
+                            >
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="form-group">
+                            <label for="numberInStock">Phone Number</label>
+                            <input class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="form-group">
+                            <label for="numberInStock">Birthday (mm/dd/yyyy)</label>
+                            <input class="form-control" />
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <a
+                      style="cursor: pointer; font-weight: bold"
+                      class="btn btn-link collapsed"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Beneficiary Information
+                    </a>
+                  </h5>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="form-group">
+                          <label for="title">First Name</label
+                          ><input class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="form-group">
+                          <label for="genreId">Type </label
+                          ><select class="form-control"
+                            ><option value="5b21ca3eeb7f6fbccd471818"
+                              >Person</option
+                            ><option value="5b21ca3eeb7f6fbccd471814"
+                              >Company</option
+                            >
+                            ></select
+                          >
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="form-group">
+                          <label for="numberInStock">Phone Number</label>
+                          <input class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="form-group">
+                          <label for="numberInStock">Birthday (mm/dd/yyyy)</label>
+                          <input class="form-control" />
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group">
+                              <label for="genreId">Country </label
+                              ><select class="form-control"
+                                ><option value="5b21ca3eeb7f6fbccd471818"
+                                  >USA</option
+                                ><option value="5b21ca3eeb7f6fbccd471814"
+                                  >Canada</option
+                                >
+                                ></select
+                              >
+                            </div>
+                          </div>
+                        <div class="col-3">
+                          <div class="form-group">
+                            <label for="title">Street Address</label
+                            ><input class="form-control" />
+                          </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-group">
+                              <label for="numberInStock">Zip</label>
+                              <input class="form-control" />
+                              </select>
+                            </div>
+                         </div>
+                         <div class="col-2">
+                            <div class="form-group">
+                              <label for="numberInStock">City</label>
+                              <input class="form-control" />
+                              </select>
+                            </div>
+                         </div>
+                         <div class="col-2">
+                            <div class="form-group">
+                              <label for="numberInStock">State</label>
+                              <input class="form-control" />
+                              </select>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-3">
+                            <div class="form-group">
+                              <label for="title">Document Number</label
+                              ><input class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="form-group">
+                              <label for="genreId">Type </label
+                              ><select class="form-control"
+                                ><option value="5b21ca3eeb7f6fbccd471818"
+                                  >Passport</option
+                                ><option value="5b21ca3eeb7f6fbccd471814"
+                                  >Driver License</option
+                                >
+                                <option value="5b21ca3eeb7f6fbccd471814"
+                                  >State License</option
+                                >
+                                <option value="5b21ca3eeb7f6fbccd471814"
+                                  >Social Security Number</option
+                                >
+                                ></select
+                              >
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="form-group">
+                              <label for="numberInStock">Phone Number</label>
+                              <input class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="form-group">
+                              <label for="numberInStock">Birthday (mm/dd/yyyy)</label>
+                              <input class="form-control" />
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="form-group">
+                                  <label for="genreId">Bank Name </label
+                                  ><input class="form-control" />
+                                </div>
+                              </div>
+                            <div class="col-3">
+                              <div class="form-group">
+                                <label for="title">Branch Number</label
+                                ><input class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group">
+                                  <label for="numberInStock">Account Number</label>
+                                  <input class="form-control" />
+                                </div>
+                             </div>
+                             <div class="col-3">
+                                <div class="form-group">
+                                  <label for="numberInStock">Account type</label>
+                                  <select class="form-control"
+                                ><option value="5b21ca3eeb7f6fbccd471818"
+                                  >Checking</option
+                                ><option value="5b21ca3eeb7f6fbccd471814"
+                                  >Savings</option
+                                ></select
+                              >
+                                </div>
+                             </div>
+
+                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <a href="remittanceCompanyPage.html" class="btn btn-primary">
+            Send Money
+          </a>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
